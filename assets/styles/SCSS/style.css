@@ -1,55 +1,57 @@
-
 body {
   background-color: black;
 }
 
-.header {
+header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 40px;
+  margin: auto;
+  nav-width: 1218px;
+  nav-height: 175px;
+  nav-left: 121px;
+  nav-top: 40px;
 }
 
-.header .logo {
-  width: 30%;
-  height: 30%;
-  -o-object-fit: cover;
-     object-fit: cover;
+.header__logo-img {
+  width: 139px;
+  height: 175px;
+  left: 121px;
+  top: 40px;
 }
 
-.header .nav {
-  justify-self: flex-end;
-}
-
-.header__logo_img {
-  padding-top: 10px;
-  width: 130px;
-  height: 130px;
-}
-
-.header__nav__list {
+.header__nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style-type: none;
   font-size: 20px;
   line-height: 18px;
+  padding: 20px;
 }
 
 .nav__list-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: 'Times New Roman', Times, serif;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-left: 40px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  width: 84px;
+  height: 25px;
+  left: 1144px;
+  top: 58px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 .header__nav-link {
@@ -71,8 +73,10 @@ body {
   background-image: url("/assets/images/Cart.svg");
   background-repeat: no-repeat;
   background-position: center;
-  width: 60px;
-  height: 60px;
+  width: 43px;
+  height: 41px;
+  left: 1296px;
+  top: 46px;
 }
 
 .cart_link:hover {
@@ -84,17 +88,36 @@ body {
   border-bottom: 1px white solid;
 }
 
-@media screen and (max-width: 480px) {
-  .header__nav {
-    display: none;
-  }
-  .header {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+.vintage {
+  width: 1440px;
+  height: 776px;
+  left: 1px;
+  top: 237px;
 }
 
+h1 {
+  position: relative;
+  width: 1440px;
+  height: 427px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 144px;
+  line-height: 196px;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mainphoto {
+  margin-top: -230px;
+  width: 1439px;
+  height: 776px;
+  left: 2px;
+  top: 422px;
+}
+
+/* vintage shop end */
 /******************************section__qa******************************/
 .qa__list {
   list-style: none;
@@ -146,7 +169,6 @@ body {
 }
 
 /******************************section_qa_end******************************/
-
 .footer {
   background-color: black;
 }

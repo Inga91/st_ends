@@ -1,76 +1,121 @@
-
 body {
     background-color: black;
 }
-//************************ header ***************************
-.header {
+
+header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    .logo {
-        width: 30%;
-        height: 30%;
-        object-fit: cover;
+    padding: 40px;
+    margin: auto;
+
+    nav: {
+        width: 1218px;
+        height: 175px;
+        left: 121px;
+        top: 40px;
     }
-    .nav {
-        justify-self: flex-end;
-    }
-}
-.header__logo-img {
-    padding-top:10px;
-    width: 130px;
-    height: 130px;
+
+
 }
 
-.header__nav-list{
+.header__logo-img {
+    width: 139px;
+    height: 175px;
+    left: 121px;
+    top: 40px;
+}
+
+.header__nav-list {
     display: flex;
     list-style-type: none;
     font-size: 20px;
     line-height: 18px;
+    padding: 20px;
 }
+
 .nav__list-items {
     display: flex;
-    font-family: 'Times New Roman', Times, serif;
-    align-items: center;
-    padding-left: 40px;
+    justify-content: end;
+    width: 84px;
+    height: 25px;
+    left: 1144px;
+    top: 58px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
+
 .header__nav-link {
     color: white;
     text-decoration: none;
     padding-top: 5px;
     padding-bottom: 5px;
 }
-.header__nav-link:hover{
+
+.header__nav-link:hover {
     color: #F5B2B6;
     text-decoration: none;
     transition: .3s;
     cursor: pointer;
 }
+
 .cart_link {
     background-image: url('/assets/images/Cart.svg');
     background-repeat: no-repeat;
     background-position: center;
-    width:60px;
-    height: 60px;
+    width: 43px;
+    height: 41px;
+    left: 1296px;
+    top: 46px;
 }
+
 .cart_link:hover {
     background-image: url('/assets/images/cart_rose.svg');
 }
+
 .header__link_checked {
     border-top: 1px white solid;
     border-bottom: 1px white solid;
 }
 
-@media screen and (max-width:480px) { 
-    .header__nav {
-        display: none;
-    }
-    .header {
-        justify-content: center;
-    }
-}
-//************************ header end ***************************
+.vintage {
 
+    width: 1440px;
+    height: 776px;
+    left: 1px;
+    top: 237px;
+}
+
+h1 {
+
+    position: relative;
+    width: 1440px;
+    height: 427px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 144px;
+    line-height: 196px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    ;
+}
+
+.mainphoto {
+    margin-top: -230px;
+    width: 1439px;
+    height: 776px;
+    left: 2px;
+    top: 422px;
+
+}
+
+/* vintage shop end */
 /******************************section__qa******************************/
 
 .qa__list {
