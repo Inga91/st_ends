@@ -88,6 +88,39 @@ header {
   border-bottom: 1px white solid;
 }
 
+@media screen and (max-width: 800px) {
+  header {
+    padding: 5px;
+    nav-width: 800px;
+    nav-height: 51px;
+    nav-left: 47px;
+    nav-top: 10px;
+  }
+  .header__logo-img {
+    margin: 10px;
+    width: 40px;
+    height: 51px;
+  }
+  .nav__list-items {
+    width: 55px;
+    height: 14px;
+    font-size: 10px;
+  }
+  .cart_link {
+    background-image: url("/assets/images/Cart 2.png");
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+  }
+  .cart_link:hover {
+    background-image: url("/assets/images/cart_rose.svg");
+  }
+  .header__link_checked {
+    border-top: 1px white solid;
+    border-bottom: 1px white solid;
+  }
+}
+
 .vintage {
   width: 1440px;
   height: 776px;
