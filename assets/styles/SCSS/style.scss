@@ -1,15 +1,15 @@
 body {
     background-color: black;
-    background-image: url(/assets/images/main_photo.jpg);
-    background-repeat: no-repeat;
 }
 
 header {
     display: flex;
+    height: 800px;
     justify-content: space-between;
-
     padding: 40px;
     margin: auto;
+    background-image: url(/assets/images/main_photo.jpg);
+    background-repeat: no-repeat;
 
 
     nav {
@@ -18,8 +18,6 @@ header {
         left: 121px;
         top: 40px;
     }
-
-
 }
 
 .header__logo-img {
@@ -83,7 +81,7 @@ header {
     border-bottom: 1px white solid;
 }
 
-h1 {
+.header__title {
     position: relative;
     width: 100%;
     height: 427px;
@@ -99,17 +97,11 @@ h1 {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-
 @media screen and (max-width:800px) {
-    body {
-        width: 50%;
-
-        background-image: url(/assets/images/mainphoto2.jpg);
-        background-size: 100%;
-    }
-
     header {
         padding: 5px;
+
+        background-size: 100%;
 
         nav {
             width: 100%;
@@ -117,8 +109,6 @@ h1 {
             left: 47px;
             top: 10px;
         }
-
-
     }
 
     .header__logo-img {
@@ -127,8 +117,6 @@ h1 {
         height: 51px;
         left: 47px;
         top: 19px;
-
-
     }
 
     .nav__list-items {
@@ -136,7 +124,6 @@ h1 {
         width: 100%;
         height: 100%;
         font-size: 10px;
-
     }
 
     .cart_link {
@@ -161,11 +148,9 @@ h1 {
         justify-content: space-between;
         width: 100%;
         height: 100%;
-
-
     }
 
-    h1 {
+    .header__title {
         position: relative;
         margin-left: 30px;
         width: 169px;
@@ -176,7 +161,7 @@ h1 {
         text-align: center;
     }
 
-    .mainphoto {
+    .main-photo {
         margin-top: auto;
         width: 428px;
         height: 100%;
@@ -186,7 +171,6 @@ h1 {
 }
 
 /************************ header end ***************************/
-/* vintage shop end */
 /****************************** section carusel ******************************/
 
 .slider {
