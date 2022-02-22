@@ -1,74 +1,85 @@
-
 body {
     background-color: black;
 }
+
 //************************ header ***************************
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     .logo {
         width: 30%;
         height: 30%;
         object-fit: cover;
     }
+
     .nav {
         justify-self: flex-end;
     }
 }
+
 .header__logo-img {
-    padding-top:10px;
+    padding-top: 10px;
     width: 130px;
     height: 130px;
 }
 
-.header__nav-list{
+.header__nav-list {
     display: flex;
     list-style-type: none;
     font-size: 20px;
     line-height: 18px;
 }
+
 .nav__list-items {
     display: flex;
     font-family: 'Times New Roman', Times, serif;
     align-items: center;
     padding-left: 40px;
 }
+
 .header__nav-link {
     color: white;
     text-decoration: none;
     padding-top: 5px;
     padding-bottom: 5px;
 }
-.header__nav-link:hover{
+
+.header__nav-link:hover {
     color: #F5B2B6;
     text-decoration: none;
     transition: .3s;
     cursor: pointer;
 }
+
 .cart_link {
     background-image: url('/assets/images/Cart.svg');
     background-repeat: no-repeat;
     background-position: center;
-    width:60px;
+    width: 60px;
     height: 60px;
 }
+
 .cart_link:hover {
     background-image: url('/assets/images/cart_rose.svg');
 }
+
 .header__link_checked {
     border-top: 1px white solid;
     border-bottom: 1px white solid;
 }
 
-@media screen and (max-width:480px) { 
+@media screen and (max-width:480px) {
     .header__nav {
         display: none;
     }
+
     .header {
         justify-content: center;
     }
 }
+
 //************************ header end ***************************
 
 /******************************section__qa******************************/
@@ -124,11 +135,22 @@ body {
 /******************************section_qa_end******************************/
 
 
-
 .footer {
     background-color: black;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    color: white;
+    padding-top: 30px;
 
     .footer__social-network_title {
-        color: beige;
+        padding-left: 30%;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    .footer__social-network {
+        justify-content: center;
     }
 }
