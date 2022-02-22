@@ -224,10 +224,89 @@ h1 {
 /******************************section_qa_end******************************/
 .footer {
   background-color: black;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  color: white;
+  padding-top: 30px;
 }
 
 .footer .footer__social-network_title {
-  color: beige;
+  padding-left: 30%;
+}
+
+.footer li {
+  list-style-type: none;
+}
+
+.footer .footer__social-network {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/***************gallery******************/
+.tabs {
+  width: 100%;
+  padding: 0px;
+  margin: 0 auto;
+}
+
+.tabs > input {
+  display: none;
+}
+
+.tabs > div {
+  display: none;
+  border: 1px solid #C0C0C0;
+  background: #FFFFFF;
+}
+
+.tabs > label {
+  display: inline-block;
+  padding: 7px;
+  margin: 0 -5px -1px 0;
+  text-align: center;
+  color: #666666;
+  border: 1px solid #C0C0C0;
+  background-color: black;
+  cursor: pointer;
+}
+
+.tabs > input:checked + label {
+  color: #ffffff;
+  border: 1px solid #C0C0C0;
+  border-bottom: 1px solid #FFFFFF;
+  background-color: black;
+}
+
+#tab_1:checked ~ #txt_1,
+#tab_2:checked ~ #txt_2,
+#tab_3:checked ~ #txt_3,
+#tab_4:checked ~ #txt_4,
+#tab_5:checked ~ #txt_5,
+#tab_6:checked ~ #txt_6 {
+  display: -ms-grid;
+  display: grid;
+  gap: 5px;
+  -ms-grid-columns: (minmax(319px, 1.5fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(319px, 1.5fr));
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  background-color: black;
+}
+
+#tab_1:checked ~ #txt_1 img,
+#tab_2:checked ~ #txt_2 img,
+#tab_3:checked ~ #txt_3 img,
+#tab_4:checked ~ #txt_4 img,
+#tab_5:checked ~ #txt_5 img,
+#tab_6:checked ~ #txt_6 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /***************gallery******************/
