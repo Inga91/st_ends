@@ -10,54 +10,40 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <title>st_ends</title>
     <link rel="stylesheet" href="/assets/styles/SCSS/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@100;500&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&family=Raleway:wght@100;500&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Raleway:wght@100;500&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+
 
     <header class="header container">
         <div class="header__logo">
             <a href="/index.html"> <img class="header__logo-img" src="assets/images/logo_stends.svg" alt="Logo"></a>
         </div>
+        <div class="vintage">
+            <h1>VINTAGE
+                <br>
+                SHOP
+            </h1>
+
+        </div>
         <div class="header__nav">
             <ul class="header__nav-list">
-                <li class="nav__list-items"><a class="header__nav-link header__link_checked"
-                        href="/index.html">Главная</a></li>
-                <li class="nav__list-items"><a class="header__nav-link" href="/index.html">Истории</a></li>
-                <li class="nav__list-items"><a class="header__nav-link" href="#">Доставка</a></li>
-                <li class="nav__list-items"><a class="header__nav-link cart_link" href="#"></a>
-                </li>
+                <li class="nav__list-items"><a class="header__nav-link" href="/index.html">ИСТОРИИ</a></li>
+                <li class="nav__list-items"><a class="header__nav-link cart_link" href="#"></a></li>
             </ul>
         </div>
+
     </header>
 
-
-    <section class="slider">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active w-100"
-                    style="background-image: url('/assets/images/decor/4E888713-C71E-4EE2-8576-8CF0FCDF2706.jpg')">
-                </div>
-                <div class="carousel-item w-100" style="background-image: url('/assets/images/decor/IMG_6135.HEIC')">
-                </div>
-                <div class="carousel-item w-100 "
-                    style="background-image: url('/assets/images/decor/E3E6DCE9-23E2-4851-8DAD-C7487EB2754F.jpg')">
-                </div>
-
-                <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls"
-                    data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-target="#carouselExampleControls"
-                    data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </button>
-            </div>
-    </section>
-
-
-    =======
 
     <section class="tabs">
 
@@ -100,7 +86,73 @@
         <div id="txt_6">
         </div>
     </section>
-    =======
+
+    <section class="slider">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active w-100"
+                    style="background-image: url('/assets/images/decor/4E888713-C71E-4EE2-8576-8CF0FCDF2706.jpg')">
+                </div>
+                <div class="carousel-item w-100" style="background-image: url('/assets/images/decor/IMG_6135.HEIC')">
+                </div>
+                <div class="carousel-item w-100 "
+                    style="background-image: url('/assets/images/decor/E3E6DCE9-23E2-4851-8DAD-C7487EB2754F.jpg')">
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls"
+                    data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-target="#carouselExampleControls"
+                    data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </button>
+            </div>
+    </section>
+
+    <section class="tabs">
+
+        <input type="radio" name="inset" value="" id="tab_1" checked>
+        <label for="tab_1">Книги</label>
+
+        <input type="radio" name="inset" value="" id="tab_2">
+        <label for="tab_2">Посуда</label>
+
+        <input type="radio" name="inset" value="" id="tab_3">
+        <label for="tab_3">Декор</label>
+
+        <input type="radio" name="inset" value="" id="tab_4">
+        <label for="tab_4">Мебель</label>
+
+        <input type="radio" name="inset" value="" id="tab_5">
+        <label for="tab_5">Освещение</label>
+
+        <input type="radio" name="inset" value="" id="tab_6">
+        <label for="tab_6">Обувь, одежда, аксессуары</label>
+
+        <div id="txt_1">
+            <img src="/assets/images/gallery/books/1.HEIC" alt="books1">
+            <img src="/assets/images/gallery/books/2.HEIC" alt="books2">
+            <img src="/assets/images/gallery/books/3.HEIC" alt="books3">
+            <img src="/assets/images/gallery/books/4.HEIC" alt="books4">
+        </div>
+        <div id="txt_2">
+        </div>
+        <div id="txt_3">
+        </div>
+        <div id="txt_4">
+        </div>
+        <div id="txt_5" class="light">
+            <img src="/assets/images/gallery/light/1.jpg" alt="light1">
+            <img src="/assets/images/gallery/light/2.jpg" alt="light2">
+            <img src="/assets/images/gallery/light/3.HEIC" alt="light3">
+            <img src="/assets/images/gallery/light/4.HEIC" alt="light4">
+        </div>
+        <div id="txt_6">
+        </div>
+    </section>
 
     <section class="qa">
         <ul class="qa__list">
@@ -173,6 +225,8 @@
         var myCarousel = document.querySelector('#carouselExampleControls')
         var carousel = new bootstrap.Carousel(myCarousel) 
     </script>
+
+
 </body>
 
 </html>
