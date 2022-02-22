@@ -1,0 +1,5 @@
+# mac hidden files
+.DS_Store
+
+/assets/styles/SCSS/style.css.map
+/assets/styles/SCSS/style.css
