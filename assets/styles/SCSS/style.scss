@@ -275,22 +275,35 @@ header {
 .footer {
     background-color: black;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     color: white;
-    padding-top: 30px;
+    padding-top: 50px;
+    padding-left: 5px;
 
     .footer__social-network_title {
-        padding-left: 30%;
+        padding-left: 10%;
+        padding-bottom: 30px;
     }
 
     li {
         list-style-type: none;
     }
 
+    .footer__social-network,
     .footer__social-network {
-        justify-content: center;
+        padding-bottom: 50px;
     }
 
+    .footer__addres_pochta,
+    .footer__addres_tel,
+    .footer__info_gallery-link,
+    .footer__info_history-link {
+        color: white;
+    }
+
+    .footer__info_history {
+        padding-bottom: 60px;
+    }
 }
 
 /***************gallery******************/
