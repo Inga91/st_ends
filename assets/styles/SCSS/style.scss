@@ -8,8 +8,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    /*высота картинки*/
-    height: 776px;
+    height: 100vh;
     padding: 40px;
     background-image: url(/assets/images/main_photo.jpg);
     background-repeat: no-repeat;
@@ -98,8 +97,6 @@ header {
 @media screen and (max-width:800px) {
     header {
         padding: 5px;
-        height: 100vh;
-
 
         nav {
             width: 100%;
