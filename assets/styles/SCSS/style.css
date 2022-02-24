@@ -20,8 +20,7 @@ body {
 .header__nav-link:hover {
   color: #F5B2B6;
   text-decoration: none;
-  -webkit-transition: .3s;
-  transition: .3s;
+  transition: 0.3s;
   cursor: pointer;
 }
 
@@ -66,7 +65,6 @@ body {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 }
-
 /************************ header end ***************************/
 /****************************** section carusel ******************************/
 .slider {
@@ -86,24 +84,22 @@ body {
     background-size: cover;
   }
 }
-
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .carousel-item {
     height: 100vh;
     background-size: contain;
   }
 }
-
 @media screen and (min-width: 1280px) {
   .carousel-item {
     height: 100vh;
     background-size: contain;
   }
+
   .slider {
     margin: 30px 0;
   }
 }
-
 .carousel-control-prev,
 .carousel-control-next {
   background: none;
@@ -123,7 +119,6 @@ body {
   overflow: hidden;
   border-bottom: 1px solid white;
 }
-
 .qa__list-all .qa__list-question {
   position: relative;
   margin: 1em 0;
@@ -132,31 +127,25 @@ body {
   color: white;
   cursor: pointer;
 }
-
 .qa__list-all .qa__list-question:focus {
   color: white;
   outline: 0;
 }
-
 .qa__list-all .qa__list-question::before {
-  content: '>';
+  content: ">";
   position: absolute;
   top: 0;
   left: 0;
   width: 1em;
   text-align: center;
 }
-
 .qa__list-all .qa__list-question:focus::before {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
-
 .qa__list-all .qa__list-answer {
   display: none;
   color: red;
 }
-
 .qa__list-all .qa__list-question:focus ~ p {
   display: block;
 }
@@ -164,36 +153,29 @@ body {
 /******************************section_qa_end******************************/
 .footer {
   background-color: black;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(220px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   color: white;
   padding-top: 50px;
   padding-left: 5px;
 }
-
 .footer .footer__social-network_title {
   padding-left: 10%;
   padding-bottom: 10px;
 }
-
 .footer li {
   list-style-type: none;
 }
-
 .footer .footer__social-network,
 .footer .footer__social-network {
   padding-bottom: 50px;
 }
-
 .footer .footer__addres_pochta,
 .footer .footer__addres_tel,
 .footer .footer__info_gallery-link,
 .footer .footer__info_history-link {
   color: white;
 }
-
 .footer .footer__info_history {
   padding-bottom: 60px;
 }
@@ -203,123 +185,60 @@ body {
 }
 
 /***************gallery******************/
-.tabs {
+.gallery_tabs {
   width: 100%;
   padding: 0px;
   margin: 0 auto;
 }
 
-.tabs > input {
+.gallery_tabs > input {
   display: none;
 }
 
-.tabs > div {
+.gallery_tabs > div {
   display: none;
-  border: 1px solid #C0C0C0;
   background: #FFFFFF;
 }
 
-.tabs > label {
+.gallery_tabs > label {
   display: inline-block;
-  padding: 7px;
-  margin: 0 -5px -1px 0;
+  padding: 5px;
   text-align: center;
   color: #666666;
-  border: 1px solid #C0C0C0;
   background-color: black;
   cursor: pointer;
 }
 
-.tabs > input:checked + label {
+.gallery_tabs > input:checked + label {
   color: #ffffff;
-  border: 1px solid #C0C0C0;
   border-bottom: 1px solid #FFFFFF;
+  border-top: 1px solid #FFFFFF;
   background-color: black;
 }
 
-#tab_1:checked ~ #txt_1,
-#tab_2:checked ~ #txt_2,
-#tab_3:checked ~ #txt_3,
-#tab_4:checked ~ #txt_4,
-#tab_5:checked ~ #txt_5,
-#tab_6:checked ~ #txt_6 {
-  display: -ms-grid;
+#tab_books:checked ~ #txt_books,
+#tab_crockery:checked ~ #txt_crockery,
+#tab_decor:checked ~ #txt_decor,
+#tab_furniture:checked ~ #txt_furniture,
+#tab_light:checked ~ #txt_light,
+#tab_shoesclothesaccessories:checked ~ #txt_hoesclothesaccessories {
   display: grid;
   gap: 5px;
-  -ms-grid-columns: (minmax(319px, 1.5fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(319px, 1.5fr));
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fit, minmax(319px, 1.5fr));
+  grid-template-rows: auto;
   background-color: black;
 }
-
-#tab_1:checked ~ #txt_1 img,
-#tab_2:checked ~ #txt_2 img,
-#tab_3:checked ~ #txt_3 img,
-#tab_4:checked ~ #txt_4 img,
-#tab_5:checked ~ #txt_5 img,
-#tab_6:checked ~ #txt_6 img {
+#tab_books:checked ~ #txt_books img,
+#tab_crockery:checked ~ #txt_crockery img,
+#tab_decor:checked ~ #txt_decor img,
+#tab_furniture:checked ~ #txt_furniture img,
+#tab_light:checked ~ #txt_light img,
+#tab_shoesclothesaccessories:checked ~ #txt_hoesclothesaccessories img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
-/***************gallery******************/
-.tabs {
-  width: 100%;
-  padding: 0px;
-  margin: 0 auto;
-}
+/***************gallery*end*****************/
 
-.tabs > input {
-  display: none;
-}
-
-.tabs > div {
-  display: none;
-  border: 1px solid #C0C0C0;
-  background: #FFFFFF;
-}
-
-.tabs > label {
-  display: inline-block;
-  padding: 7px;
-  margin: 0 -5px -1px 0;
-  text-align: center;
-  color: #666666;
-  border: 1px solid #C0C0C0;
-  background-color: black;
-  cursor: pointer;
-}
-
-.tabs > input:checked + label {
-  color: #ffffff;
-  border: 1px solid #C0C0C0;
-  border-bottom: 1px solid #FFFFFF;
-  background-color: black;
-}
-
-#tab_1:checked ~ #txt_1,
-#tab_2:checked ~ #txt_2,
-#tab_3:checked ~ #txt_3,
-#tab_4:checked ~ #txt_4,
-#tab_5:checked ~ #txt_5,
-#tab_6:checked ~ #txt_6 {
-  display: -ms-grid;
-  display: grid;
-  gap: 5px;
-  -ms-grid-columns: (minmax(319px, 1.5fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(319px, 1.5fr));
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-  background-color: black;
-}
-
-img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
 /*# sourceMappingURL=style.css.map */
