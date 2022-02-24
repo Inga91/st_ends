@@ -15,6 +15,7 @@ body {
 
 .header__nav-link {
   color: white;
+  font-size: 0.8em;
 }
 
 .header__nav-link:hover {
@@ -28,8 +29,9 @@ body {
 .cart_link {
   background-image: url("/assets/images/Cart.svg");
   background-repeat: no-repeat;
-  width: 45px;
-  height: 50px;
+  background-size: cover;
+  background-position: center;
+  height: 30px;
 }
 
 .cart_link:hover {
@@ -52,8 +54,17 @@ body {
 
 @media screen and (min-width: 1000px) {
   .header__title {
-    padding-top: 200px;
-    padding-bottom: 400px;
+    background-image: url(/assets/images/main_photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    font-weight: normal;
+    font-size: 10em;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 }
 
