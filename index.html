@@ -25,22 +25,35 @@
 
 
     <header class="header">
-        <div class="header__logo">
-            <a href="/index.html"> <img class="header__logo-img" src="assets/images/logo_stends.svg" alt="Logo"></a>
-        </div>
+        <nav class="navbar">
+            <div class="container header__container">
+                <a class="navbar-brand header__logo" href="#">
+                    <img class="header__logo_st" src="/assets/images/logo_stends.svg" alt="logo" width="" height="">
+                </a>
+                <div class="header__nav">
+                    <ul class="nav justify-content-end header__nav-list">
+                        <li class="nav-item nav__list-items">
+                            <a class="nav-link header__nav-link" href="#">ИСТОРИИ</a>
+                        </li>
+                        <li class="nav-item nav__list-items">
+                            <a class="nav-link cart_link header__nav-link" href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
         <div class="vintage">
             <h1 class="header__title">VINTAGE
                 <br>
                 SHOP
             </h1>
         </div>
-        <div class="header__nav">
-            <ul class="header__nav-list">
-                <li class="nav__list-items"><a class="header__nav-link" href="/index.html">ИСТОРИИ</a></li>
-                <li class="nav__list-items"><a class="header__nav-link cart_link" href="#"></a></li>
-            </ul>
-        </div>
     </header>
+
+
 
     <section class="slider">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -114,12 +127,13 @@
             <h6 class="footer__social-network_title">СОЦСЕТИ</h6>
             <div class="footer__social-network_link">
                 <a class="footer__social-network_link" href="#">
-                    <img class="footer__social-network_instagram" src="/assets/images/footer-instagram-old.svg"
-                        alt="instagram"></img></a>
+                    <img class="footer__social-network_img footer__social-network_instagram"
+                        src="/assets/images/footer-instagram-old.svg" alt="instagram"></img></a>
                 <a class="footer__social-network_link" href="#">
-                    <img class="footer__social-network_pinterest" src="/assets/images/footer-icons8-pinterest.svg"
-                        alt="pinterest"></img></a>
-                <a class="footer__social-network_link" href="#"><img class="footer__social-network_facebook"
+                    <img class="footer__social-network_img footer__social-network_pinterest"
+                        src="/assets/images/footer-icons8-pinterest.svg" alt="pinterest"></img></a>
+                <a class="footer__social-network_link" href="#"><img
+                        class="footer__social-network_img footer__social-network_facebook"
                         src="/assets/images/footer-facebook.svg" alt="facebook"></img></a>
             </div>
         </div>
