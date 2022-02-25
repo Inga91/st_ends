@@ -180,7 +180,6 @@ body {
     padding-left: 5px;
 
     .footer__social-network_title {
-        padding-left: 10%;
         padding-bottom: 10px;
     }
 
@@ -188,25 +187,41 @@ body {
         list-style-type: none;
     }
 
-    .footer__social-network,
     .footer__social-network {
         padding-bottom: 50px;
+        margin-left: 30px;
     }
 
-    .footer__addres_pochta,
-    .footer__addres_tel,
-    .footer__info_gallery-link,
-    .footer__info_history-link {
+    .footer__addres-pochta,
+    .footer__addres-tel,
+    .footer__info-pay-link,
+    .footer__info-history-link,
+    .footer__social-network {
         color: white;
     }
 
-    .footer__info_history {
-        padding-bottom: 60px;
+    .footer__social-network,
+    .footer__addres,
+    .footer__info {
+        padding-left: 10%;
+        font-size: 12px;
     }
+}
+
+.footer__info {
+    line-height: 2.5;
+}
+
+.footer__info-pay-link {
+    padding-bottom: 20px;
 }
 
 .footer__social-network_img {
     width: 50px;
+}
+
+.footer__info-history-link {
+    margin-top: 25px;
 }
 
 /***************gallery******************/
