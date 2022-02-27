@@ -7,6 +7,8 @@ body {
 
 /************************ header ***************************/
 .header {
+  height: 700px;
+  width: 100%;
   background-image: url(/assets/images/main_photo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -103,7 +105,7 @@ body {
   height: 90vh;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -190,10 +192,6 @@ body {
 /******************************section_qa_end******************************/
 .footer {
   background-color: black;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(220px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   color: white;
   padding-top: 50px;
   padding-left: 5px;
@@ -209,7 +207,6 @@ body {
 
 .footer .footer__social-network {
   padding-bottom: 50px;
-  margin-left: 30px;
 }
 
 .footer .footer__addres-pochta,
@@ -223,12 +220,10 @@ body {
 .footer .footer__social-network,
 .footer .footer__addres,
 .footer .footer__info {
-  padding-left: 10%;
-  font-size: 12px;
-}
 
-.footer__info {
-  line-height: 2.5;
+  padding-left: 10%;
+
+  font-size: 12px;
 }
 
 .footer__info-pay-link {
@@ -240,7 +235,7 @@ body {
 }
 
 .footer__info-history-link {
-  margin-top: 25px;
+  padding-bottom: 50px;
 }
 
 /***************gallery******************/
