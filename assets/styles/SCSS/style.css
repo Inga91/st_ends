@@ -7,6 +7,7 @@ body {
 
 /************************ header ***************************/
 .header {
+  height: 50em;
   background-image: url(/assets/images/main_photo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -91,7 +92,7 @@ body {
   height: 90vh;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
