@@ -114,10 +114,6 @@ body {
 /***************************************************footer******************************************************/
 .footer {
   background-color: black;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(220px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   color: white;
   padding-top: 50px;
   padding-left: 5px;
@@ -149,10 +145,6 @@ body {
   font-size: 12px;
 }
 
-.footer__info {
-  line-height: 2.5;
-}
-
 .footer__info-pay-link {
   padding-bottom: 20px;
 }
@@ -162,7 +154,7 @@ body {
 }
 
 .footer__info-history-link {
-  margin-top: 25px;
+  padding-bottom: 50px;
 }
 
 /*************************************************footer_end********************************************/
