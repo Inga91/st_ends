@@ -11,6 +11,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: 100vh;
 }
 
 .header__logo_st {
@@ -57,6 +58,10 @@ body {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.vintage {
+  height: 100;
+}
+
 @media screen and (min-width: 1000px) {
   .header__title {
     width: 100%;
@@ -85,6 +90,13 @@ body {
 /****************************** section carusel ******************************/
 .slider {
   margin: 10px 0;
+}
+
+.slider__title {
+  text-transform: uppercase;
+  font-size: calc(14px + 45*(100vw / 1280));
+  text-align: center;
+  padding-bottom: 2%;
 }
 
 .carousel-item {
@@ -187,30 +199,30 @@ body {
   padding-left: 5px;
 }
 
-.footer__social-network_title {
+.footer .footer__social-network_title {
   padding-bottom: 10px;
 }
 
-li {
+.footer li {
   list-style-type: none;
 }
 
-.footer__social-network {
+.footer .footer__social-network {
   padding-bottom: 50px;
   margin-left: 30px;
 }
 
-.footer__addres-pochta,
-.footer__addres-tel,
-.footer__info-pay-link,
-.footer__info-history-link,
-.footer__social-network {
+.footer .footer__addres-pochta,
+.footer .footer__addres-tel,
+.footer .footer__info-pay-link,
+.footer .footer__info-history-link,
+.footer .footer__social-network {
   color: white;
 }
 
-.footer__social-network,
-.footer__addres,
-.footer__info {
+.footer .footer__social-network,
+.footer .footer__addres,
+.footer .footer__info {
   padding-left: 10%;
   font-size: 12px;
 }
