@@ -195,6 +195,7 @@ body {
     padding-top: 50px;
     padding-left: 5px;
 
+
     .footer__social-network_title {
         padding-bottom: 10px;
     }
@@ -214,22 +215,27 @@ body {
     .footer__info-history-link,
     .footer__social-network {
         color: white;
+
+
     }
 
     .footer__social-network,
     .footer__addres,
     .footer__info {
         padding-left: 10%;
-        font-size: 12px;
+        font-size: 14px;
+        line-height: 2.5;
     }
 }
 
 .footer__info {
     line-height: 2.5;
+
 }
 
 .footer__info-pay-link {
     padding-bottom: 20px;
+
 }
 
 .footer__social-network_img {
@@ -292,3 +298,6 @@ body {
 }
 
 /***************gallery*end*****************/
+.photo {
+    max-width: 90%;
+}
