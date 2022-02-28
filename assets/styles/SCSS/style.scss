@@ -211,6 +211,9 @@ body {
     padding-top: 50px;
     padding-left: 5px;
 
+
+
+
     .footer__social-network_title {
         padding-bottom: 10px;
     }
@@ -229,17 +232,22 @@ body {
     .footer__info-history-link,
     .footer__social-network {
         color: white;
+
+
     }
 
     .footer__social-network,
     .footer__addres,
     .footer__info {
         font-size: 12px;
+        line-height: 2.5em;
+
     }
 }
 
 .footer__info-pay-link {
     padding-bottom: 20px;
+
 }
 
 .footer__social-network_img {
@@ -302,3 +310,47 @@ body {
 }
 
 /***************gallery*end*****************/
+.photo {
+    max-width: 90%;
+}
+
+#buttonup {
+    display: inline-block;
+    background-color: #0f0f0f;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#buttonup::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+#buttonup:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+#buttonup:active {
+    background-color: #555;
+}
+
+#buttonup.show {
+    opacity: 1;
+    visibility: visible;
+}

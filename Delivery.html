@@ -24,12 +24,23 @@
 <body>
 
     <header class="header">
-        <div class="header__logo">
-            <a href="/index.html"> <img class="header__logo-img" src="assets/images/logo_stends.svg" alt="Logo"></a>
-        </div>
-        <div class="header__nav">
-            <a class="nav__list-items" href="./index.html">ИСТОРИИ</a>
-        </div>
+        <nav class="navbar">
+            <div class="container header__container">
+                <a class="navbar-brand header__logo" href="/index.html">
+                    <img class="header__logo_st" src="/assets/images/logo_stends.svg" alt="logo">
+                </a>
+                <div class="header__nav">
+                    <ul class="nav justify-content-end  align-items-center header__nav-list">
+                        <li class="nav-item nav__list-items">
+                            <a class="nav-link header__nav-link story-link" href="">ИСТОРИИ</a>
+                        </li>
+                        <li class="nav-item nav__list-items">
+                            <a class="nav-link cart_link header__nav-link" href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
@@ -99,9 +110,9 @@
             </address>
             <div class="col-md-2 footer__info">
                 <li class="footer__info footer__info-pay">
-                    <a class="footer__info-pay-link" href="#">оплата / доставка / возврат</a>
+                    <a class="footer__info-pay-link" href="/Delivery.html">ОПЛАТА / ДОСТАВКА / ВОЗВРАТ</a>
                 </li>
-                <li class="footer__info footer__info-history"><a class="footer__info-history-link" href="#">ИСТОРИЯ</a>
+                <li class="footer__info footer__info-history"><a class="footer__info-history-link" href="#">ИСТОРИИ</a>
                 </li>
             </div>
         </div>
