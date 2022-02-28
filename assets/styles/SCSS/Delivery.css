@@ -155,6 +155,7 @@ body {
 .footer .footer__addres,
 .footer .footer__info {
   font-size: 12px;
+  line-height: 2.5em;
 }
 
 .footer__info-pay-link {
