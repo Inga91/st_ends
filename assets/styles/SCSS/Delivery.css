@@ -50,18 +50,31 @@ body {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-@media screen and (max-width: 800px) {
-  .header {
-    padding: 5px;
-    background-size: 100%;
-    margin-bottom: 50px;
+.vintage {
+  height: 100;
+}
+
+@media screen and (min-width: 1000px) {
+  .header__title {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    font-weight: normal;
+    font-size: 10em;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
-  .header__logo-img {
-    margin: 10px;
-    width: 140px;
-    height: 151px;
-    left: 47px;
-    top: 19px;
+  .header__nav-link {
+    font-size: 1.1em;
+  }
+  .nav__list-items {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .story-link {
+    display: none;
   }
 }
 
@@ -125,8 +138,11 @@ body {
 /********************************************************about_end**********************************************/
 /***************************************************footer******************************************************/
 .footer {
+  background-image: url(/assets/images/Line1.png);
+  background-repeat: no-repeat;
   background-color: black;
   color: white;
+  margin-top: 50px;
   padding-top: 50px;
   padding-left: 5px;
 }
