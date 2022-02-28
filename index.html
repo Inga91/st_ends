@@ -19,6 +19,25 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Raleway:wght@100;500&family=Roboto:wght@700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles/remodal.css">
+    <link rel="stylesheet" href="/assets/styles/remodal-default-theme.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+
+    <style>
+        .remodal-bg.with-red-theme.remodal-is-opening,
+        .remodal-bg.with-red-theme.remodal-is-opened {
+            filter: none;
+        }
+
+        .remodal-overlay.with-red-theme {
+            background-color: #f44336;
+        }
+
+        .remodal.with-red-theme {
+            background: #fff;
+        }
+    </style>
 </head>
 
 <body>
@@ -26,13 +45,13 @@
     <header class="header">
         <nav class="navbar">
             <div class="container header__container">
-                <a class="navbar-brand header__logo" href="#">
+                <a class="navbar-brand header__logo" href="/index.html">
                     <img class="header__logo_st" src="/assets/images/logo_stends.svg" alt="logo">
                 </a>
                 <div class="header__nav">
                     <ul class="nav justify-content-end  align-items-center header__nav-list">
                         <li class="nav-item nav__list-items">
-                            <a class="nav-link header__nav-link story-link" href="#">ИСТОРИИ</a>
+                            <a class="nav-link header__nav-link story-link" href="">ИСТОРИИ</a>
                         </li>
                         <li class="nav-item nav__list-items">
                             <a class="nav-link cart_link header__nav-link" href="#"></a>
@@ -45,6 +64,7 @@
     </header>
 
     <main>
+        <a id="buttonup" href="#gallery_tabs"></a>
         <section class="slider">
             <div class="slider__title">
                 Новинки
@@ -52,13 +72,137 @@
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active w-100"
-                        style="background-image: url('/assets/images/decor/4E888713-C71E-4EE2-8576-8CF0FCDF2706.jpg')">
+                        style="background-image: url('/assets/images/photography/73340018.jpeg')">
                     </div>
                     <div class="carousel-item w-100"
-                        style="background-image: url('/assets/images/decor/IMG_6135.HEIC')">
+                        style="background-image: url('/assets/images/photography/73340023.jpeg')">
                     </div>
                     <div class="carousel-item w-100 "
-                        style="background-image: url('/assets/images/decor/E3E6DCE9-23E2-4851-8DAD-C7487EB2754F.jpg')">
+                        style="background-image: url('/assets/images/photography/73340028.jpeg')">
+                    </div>
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/73340029.jpeg')">
+                    </div>
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/73340032.jpeg')">
+                    </div>
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/IMG_2785.JPG')">
+                    </div>
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/IMG_2786.JPG')">
+                    </div>
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/IMG_2789.JPG')">
+                    </div>
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/IMG_2790.JPG')">
+                    </div>
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/IMG_2791.JPG')">
+                    </div>
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/IMG_2792.JPG')">
+                    </div>
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/IMG_2794.JPG')">
+                    </div>
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/IMG_2796.JPG')">
+                    </div>
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/IMG_2799.JPG')">
+                    </div>
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/IMG_2800.JPG')">
+                    </div>
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/IMG_2801.JPG')">
+                    </div>
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/IMG_2803.JPG')">
+                    </div>
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/IMG_2804.JPG')">
+                    </div>
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/IMG_2805.JPG')">
+                    </div>
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/IMG_2806.JPG')">
+                    </div>
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/IMG_2807.JPG')">
+                    </div>
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/IMG_2808.JPG')">
+                    </div>
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/IMG_2809.JPG')">
+                    </div>
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/IMG_2810.JPG')">
+                    </div>
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/IMG_2897.JPG')">
+                    </div>
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/IMG_2929.JPG')">
+                    </div>
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/IMG_2930.JPG')">
+                    </div>
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/IMG_2931.JPG')">
+                    </div>
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/IMG_3989.JPG')">
+                    </div>
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/IMG_3990.JPG')">
+                    </div>
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/IMG_3991.JPG')">
+                    </div>
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/IMG_3992.JPG')">
+                    </div>
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/IMG_5794.JPG')">
+                    </div>
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/IMG_5795.JPG')">
+                    </div>
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/IMG_5798.JPG')">
+                    </div>
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/IMG_5817.JPG')">
+                    </div>
+
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/IMG_5833.JPG')">
+                    </div>
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/IMG_5836.JPG')">
+                    </div>
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/IMG_5839.JPG')">
+                    </div>
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/IMG_5840.JPG')">
+                    </div>
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/IMG_5879.JPG')">
+                    </div>
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/IMG_5883.JPG')">
+                    </div>
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/IMG_5922.jpeg')">
+                    </div>
+                    <div class="carousel-item w-100 "
+                        style="background-image: url('/assets/images/photography/IMG_5925.jpeg')">
                     </div>
 
                     <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls"
@@ -77,56 +221,1514 @@
         <!--GALLERY SECTION-->
         <section class="gallery_tabs">
             <!--Названия вкладок-->
-            <input type="radio" name="inset" value="" id="tab_books" checked>
-            <label for="tab_books">КНИГИ</label>
-
-            <input type="radio" name="inset" value="" id="tab_crockery">
-            <label for="tab_crockery">ПОСУДА</label>
+            <input type="radio" name="inset" value="" id="tab_light" checked>
+            <label for="tab_light">ОСВЕЩЕНИЕ</label>
 
             <input type="radio" name="inset" value="" id="tab_decor">
             <label for="tab_decor">ДЕКОР</label>
 
+            <input type="radio" name="inset" value="" id="tab_crockery">
+            <label for="tab_crockery">ПОСУДА</label>
+
+            <input type="radio" name="inset" value="" id="tab_books">
+            <label for="tab_books">КНИГИ</label>
+
             <input type="radio" name="inset" value="" id="tab_furniture">
             <label for="tab_furniture">МЕБЕЛЬ</label>
 
-            <input type="radio" name="inset" value="" id="tab_light">
-            <label for="tab_light">ОСВЕЩЕНИЕ</label>
-
             <input type="radio" name="inset" value="" id="tab_shoesclothesaccessories">
-            <label for="tab_shoesclothesaccessories">ОБУВЬ, ОДЕЖДА, АКСЕССУАРЫ</label>
+            <label for="tab_shoesclothesaccessories">ОДЕЖДА И АКСЕССУАРЫ</label>
             <!--Контент вкладок-->
 
             <!--КНИГИ-->
             <div id="txt_books">
-                <img src="/assets/images/gallery/books/1.HEIC" alt="books1">
-                <img src="/assets/images/gallery/books/2.HEIC" alt="books2">
-                <img src="/assets/images/gallery/books/3.HEIC" alt="books3">
-                <img src="/assets/images/gallery/books/4.HEIC" alt="books4">
+                <div class="remodal" data-remodal-id="modal5" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/books/1.HEIC" alt="books1">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal5"><img src="/assets/images/gallery/books/1.HEIC" alt="books1"></a><br>
+                </div>
+
+                <div class="remodal" data-remodal-id="modal6" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/books/2.HEIC" alt="books2">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal6"><img src="/assets/images/gallery/books/2.HEIC" alt="books2"></a><br>
+
+                </div>
+
+                <div class="remodal" data-remodal-id="modal7" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/books/3.HEIC" alt="books3">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal7"><img src="/assets/images/gallery/books/3.HEIC" alt="books3"></a><br>
+
+                </div>
+
+                <div class="remodal" data-remodal-id="modal8" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/books/4.HEIC" alt="books4">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal8"><img src="/assets/images/gallery/books/4.HEIC" alt="books4"></a><br>
+                </div>
+
+                <div class="remodal" data-remodal-id="modal24" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/books/10.HEIC" alt="books5">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal24"><img src="/assets/images/gallery/books/10.HEIC" alt="books5"></a><br>
+                </div>
+
+                <div class="remodal" data-remodal-id="modal25" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/books/11.HEIC" alt="books6">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal25"><img src="/assets/images/gallery/books/11.HEIC" alt="books6"></a><br>
+                </div>
+
+                <div class="remodal" data-remodal-id="modal26" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/books/12.jpeg" alt="books6">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal26"><img src="/assets/images/gallery/books/12.jpeg" alt="books6"></a><br>
+                </div>
+
+
+                <div class="remodal" data-remodal-id="modal27" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/books/5.HEIC" alt="books7">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal27"><img src="/assets/images/gallery/books/5.HEIC" alt="books7"></a><br>
+                </div>
+
+                <div class="remodal" data-remodal-id="modal28" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/books/6.jpg" alt="books8">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal28"><img src="/assets/images/gallery/books/6.jpg" alt="books8"></a><br>
+                </div>
+
+                <div class="remodal" data-remodal-id="modal29" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/books/7.HEIC" alt="books9">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal29"><img src="/assets/images/gallery/books/7.HEIC" alt="books9"></a><br>
+                </div>
+
+                <div class="remodal" data-remodal-id="modal30" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/books/8.HEIC" alt="books10">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal30"><img src="/assets/images/gallery/books/8.HEIC" alt="books10"></a><br>
+                </div>
+
+                <div class="remodal" data-remodal-id="modal31" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/books/9.HEIC" alt="books11">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal31"><img src="/assets/images/gallery/books/9.HEIC" alt="books11"></a><br>
+                </div>
             </div>
 
             <!--ПОСУДА-->
             <div id="txt_crockery">
+                <div class="remodal" data-remodal-id="modal9" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/crockery/10.jpg" alt="crockery1">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal9"><img src="/assets/images/gallery/crockery/10.jpg" alt="crockery1"></a><br>
+                </div>
+
+                <div class="remodal" data-remodal-id="modal10" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/crockery/7.jpg" alt="crockery2">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal10"><img src="/assets/images/gallery/crockery/7.jpg" alt="crockery2"></a><br>
+
+                </div>
+
+
+
+                <div class="remodal" data-remodal-id="modal12" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/crockery/6.jpg" alt="crockery4">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal12"><img src="/assets/images/gallery/crockery/6.jpg" alt="crockery4"></a><br>
+                </div>
+
+                <div class="remodal" data-remodal-id="modal32" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/crockery/1.jpg" alt="crockery5">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal32"><img src="/assets/images/gallery/crockery/1.jpg" alt="crockery5"></a><br>
+                </div>
+
+                <div class="remodal" data-remodal-id="modal33" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/crockery/11.jpg" alt="crockery6">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal33"><img src="/assets/images/gallery/crockery/11.jpg" alt="crockery6"></a><br>
+                </div>
+
+                <div class="remodal" data-remodal-id="modal34" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/crockery/3.jpeg" alt="crockery7">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal34"><img src="/assets/images/gallery/crockery/3.jpeg" alt="crockery7"></a><br>
+                </div>
+
+                <div class="remodal" data-remodal-id="modal35" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/crockery/5.jpeg" alt="crockery8">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal35"><img src="/assets/images/gallery/crockery/5.jpeg" alt="crockery8"></a><br>
+                </div>
+
+                <div class="remodal" data-remodal-id="modal36" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/crockery/4.jpg" alt="crockery9">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal36"><img src="/assets/images/gallery/crockery/4.jpg" alt="crockery9"></a><br>
+                </div>
+
+
+                <div class="remodal" data-remodal-id="modal38" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/crockery/9.jpg" alt="crockery11">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal38"><img src="/assets/images/gallery/crockery/9.jpg" alt="crockery11"></a><br>
+                </div>
+
             </div>
 
             <!--ДЕКОР-->
             <div id="txt_decor">
+                <div class="remodal" data-remodal-id="modal13" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/decor/1.jpg" alt="decor1">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal13"><img src="/assets/images/gallery/decor/1.jpg" alt="decor1"></a><br>
+
+                </div>
+                <div class="remodal" data-remodal-id="modal14" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/decor/12.jpg" alt="decor2">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal14"><img src="/assets/images/gallery/decor/12.jpg" alt="decor2"></a><br>
+
+                </div>
+                <div class="remodal" data-remodal-id="modal15" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/decor/13.jpg" alt="decor3">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal15"><img src="/assets/images/gallery/decor/13.jpg" alt="decor3"></a><br>
+
+                </div>
+                <div class="remodal" data-remodal-id="modal16" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/decor/2.jpg" alt="decor4">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+
+                <div class="remodal-bg">
+                    <a href="#modal39"><img src="/assets/images/gallery/decor/2.jpg" alt="decor4"></a><br>
+                </div>
+                <div class="remodal" data-remodal-id="modal16" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/decor/10.HEIC" alt="decor5">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+
+                <div class="remodal-bg">
+                    <a href="#modal39"><img src="/assets/images/gallery/decor/10.HEIC" alt="decor5"></a><br>
+                </div>
+
+                <div class="remodal" data-remodal-id="modal40" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/decor/11.jpg" alt="decor6">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal40"><img src="/assets/images/gallery/decor/11.jpg" alt="decor6"></a><br>
+                </div>
+
+                <div class="remodal" data-remodal-id="modal41" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/decor/14.HEIC" alt="decor7">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal41"><img src="/assets/images/gallery/decor/14.HEIC" alt="decor7"></a><br>
+                </div>
+
+                <div class="remodal" data-remodal-id="modal42" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/decor/15.HEIC" alt="decor8">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal42"><img src="/assets/images/gallery/decor/15.HEIC" alt="decor8"></a><br>
+                </div>
+
+                <div class="remodal" data-remodal-id="modal43" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/decor/17.HEIC" alt="decor9">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal43"><img src="/assets/images/gallery/decor/16.jpeg" alt="decor9"></a><br>
+                </div>
+
+
+
+                <div class="remodal" data-remodal-id="modal45" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/decor/18.jpeg" alt="decor11">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal45"><img src="/assets/images/gallery/decor/18.jpeg" alt="decor11"></a><br>
+                </div>
+
+                <div class="remodal" data-remodal-id="modal46" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/decor/20.HEIC" alt="decor13">
+                                <img class="photo" src="/assets/images/gallery/decor/21.jpeg" alt="decor13">
+                                <img class="photo" src="/assets/images/gallery/decor/22.jpeg" alt="decor13">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal46"><img src="/assets/images/gallery/decor/19.HEIC" alt="decor12"></a><br>
+                </div>
+
+                <div class="remodal" data-remodal-id="modal47" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/decor/24.jpeg" alt="decor13">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal47"><img src="/assets/images/gallery/decor/23.HEIC" alt="decor13"></a><br>
+                </div>
+
+                <div class="remodal" data-remodal-id="modal48" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/decor/25.HEIC" alt="decor14">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal48"><img src="/assets/images/gallery/decor/25.HEIC" alt="decor14"></a><br>
+                </div>
+
+                <div class="remodal" data-remodal-id="modal49" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/decor/26.HEIC" alt="decor15">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal49"><img src="/assets/images/gallery/decor/26.HEIC" alt="decor15"></a><br>
+                </div>
+
+                <div class="remodal" data-remodal-id="modal50" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/decor/27.HEIC" alt="decor16">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal50"><img src="/assets/images/gallery/decor/27.HEIC" alt="decor16"></a><br>
+                </div>
+
+                <div class="remodal" data-remodal-id="modal51" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/decor/28.HEIC" alt="decor17">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal51"><img src="/assets/images/gallery/decor/28.HEIC" alt="decor17"></a><br>
+                </div>
+
+                <div class="remodal" data-remodal-id="modal52" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/decor/29.jpeg" alt="decor18">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal52"><img src="/assets/images/gallery/decor/29.jpeg" alt="decor18"></a><br>
+                </div>
+
+                <div class="remodal" data-remodal-id="modal53" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/decor/3.jpg" alt="decor19">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal53"><img src="/assets/images/gallery/decor/3.jpg" alt="decor19"></a><br>
+                </div>
+
+                <div class="remodal" data-remodal-id="modal54" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/decor/30.HEIC alt=" decor20">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal54"><img src="/assets/images/gallery/decor/30.HEIC" alt="decor20"></a><br>
+                </div>
+
+                <div class="remodal" data-remodal-id="modal55" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/decor/4.HEIC" alt="decor21">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal55"><img src="/assets/images/gallery/decor/4.HEIC" alt="decor21"></a><br>
+                </div>
+
+                <div class="remodal" data-remodal-id="modal56" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/decor/5.jpg" alt="deco22">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal56"><img src="/assets/images/gallery/decor/5.jpg" alt="decor22"></a><br>
+                </div>
+
+                <div class="remodal" data-remodal-id="modal57" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/decor/6.HEIC" alt="decor23">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal57"><img src="/assets/images/gallery/decor/6.HEIC" alt="decor23"></a><br>
+                </div>
+
+                <div class="remodal" data-remodal-id="modal58" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/decor/7.HEIC" alt="decor24">
+                            </span>
+                            <p>Описание</p>
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal58"><img src="/assets/images/gallery/decor/7.HEIC" alt="decor24"></a><br>
+                </div>
+
+                <div class="remodal" data-remodal-id="modal59" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/decor/8.HEIC" alt="decor25">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal59"><img src="/assets/images/gallery/decor/8.HEIC" alt="decor25"></a><br>
+                </div>
+
+                <div class="remodal" data-remodal-id="modal60" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/decor/9.HEIC" alt="decor26">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal60"><img src="/assets/images/gallery/decor/9.HEIC" alt="decor26"></a><br>
+                </div>
             </div>
 
             <!--МЕБЕЛЬ-->
             <div id="txt_furniture">
+                <div class="remodal" data-remodal-id="modal17" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/furniture/1.jpg" alt="furniture1">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal17"><img src="/assets/images/gallery/furniture/1.jpg" alt="furniture1"></a><br>
+                </div>
+
+                <div class="remodal" data-remodal-id="modal18" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/furniture/2.HEIC" alt="furniture2">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal18"><img src="/assets/images/gallery/furniture/2.HEIC" alt="furniture2"></a><br>
+                </div>
+
+                <div class="remodal" data-remodal-id="modal19" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/furniture/furn1.jpeg" alt="furniture3">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal19"><img src="/assets/images/gallery/furniture/furn1.jpeg" alt="furniture3"></a><br>
+                </div>
+
             </div>
 
             <!--ОСВЕЩЕНИЕ-->
             <div id="txt_light">
-                <img src="/assets/images/gallery/light/1.jpg" alt="light1">
-                <img src="/assets/images/gallery/light/2.jpg" alt="light2">
-                <img src="/assets/images/gallery/light/3.HEIC" alt="light3">
-                <img src="/assets/images/gallery/light/4.HEIC" alt="light4">
+
+                <div class="remodal" data-remodal-id="modal1" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/light/1.jpg" alt="light1">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal1"><img src="/assets/images/gallery/light/1.jpg" alt="light1"></a><br>
+
+                </div>
+                <div class="remodal" data-remodal-id="modal4" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/light/2.jpg" alt="light2">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal4"><img src="/assets/images/gallery/light/2.jpg" alt="light2"></a><br>
+
+                </div>
+                <div class="remodal" data-remodal-id="modal3" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/light/5.jpeg" alt="light3">
+                                <img class="photo" src="/assets/images/gallery/light/7.jpeg" alt="light11">
+                                <img class="photo" src="/assets/images/gallery/light/6.jpeg" alt="light10">
+                            </span>
+
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal3"><img src="/assets/images/gallery/light/5.jpeg" alt="light3"></a><br>
+
+                </div>
+                <div class="remodal" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/light/4.jpeg" alt="light4">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal"><img src="/assets/images/gallery/light/4.HEIC" alt="light4"></a><br>
+
+                </div>
+
+                <div class="remodal" data-remodal-id="modal61" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/light/10.HEIC" alt="light5">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal61"><img src="/assets/images/gallery/light/10.HEIC" alt="light5"></a><br>
+
+                </div>
+                <div class="remodal" data-remodal-id="modal62" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/light/11.JPG" alt="light6">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal62"><img src="/assets/images/gallery/light/11.JPG" alt="light6"></a><br>
+
+                </div>
+                <div class="remodal" data-remodal-id="modal63" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/light/13.HEIC" alt="light8">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal63"><img src="/assets/images/gallery/light/12.HEIC" alt="light7"></a><br>
+
+
+                </div>
+                <div class="remodal" data-remodal-id="modal65" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/light/3.jpeg" alt="light9">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal65"><img src="/assets/images/gallery/light/3.jpeg" alt="light9"></a><br>
+
+                </div>
+
+                <div class="remodal" data-remodal-id="modal68" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/light/8.HEIC" alt="light12">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal68"><img src="/assets/images/gallery/light/8.HEIC" alt="light12"></a><br>
+
+                </div>
+                <div class="remodal" data-remodal-id="modal69" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/light/9.jpg" alt="light13">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal69"><img src="/assets/images/gallery/light/9.jpg" alt="light13"></a><br>
+
+                </div>
             </div>
 
             <!--ОБУВЬ, ОДЕЖДА, АКСЕССУАРЫ-->
             <div id="txt_hoesclothesaccessories">
+                <div class="remodal" data-remodal-id="modal20" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/shoesclothesaccessories/1.jpg"
+                                    alt="accessories1">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal20"><img src="/assets/images/gallery/shoesclothesaccessories/1.jpg"
+                            alt="accessories1"></a><br>
+                </div>
+
+                <div class="remodal" data-remodal-id="modal21" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/shoesclothesaccessories/13.jpeg"
+                                    alt="accessories2">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal21"><img src="/assets/images/gallery/shoesclothesaccessories/12.jpg"
+                            alt="accessories2"></a><br>
+                </div>
+
+                <div class="remodal" data-remodal-id="modal22" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/shoesclothesaccessories/4.HEIC"
+                                    alt="accessories3">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal22"><img src="/assets/images/gallery/shoesclothesaccessories/4.HEIC"
+                            alt="accessories3"></a><br>
+                </div>
+                <div class="remodal" data-remodal-id="modal81" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/shoesclothesaccessories/5.HEIC"
+                                    alt="accessories6">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal81"><img class="photo" src="/assets/images/gallery/shoesclothesaccessories/6.HEIC"
+                            alt="accessories6"></a><br>
+                </div>
+                <div class="remodal" data-remodal-id="modal23" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/shoesclothesaccessories/7.jpg"
+                                    alt="accessories4">
+                                <img class="photo" src="/assets/images/gallery/shoesclothesaccessories/8.jpg"
+                                    alt="accessories4">
+                                <img class="photo" src="/assets/images/gallery/shoesclothesaccessories/9.jpg"
+                                    alt="accessories4">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal23"><img src="/assets/images/gallery/shoesclothesaccessories/7.jpg"
+                            alt="accessories4"></a><br>
+
+                </div>
+                <div class="remodal" data-remodal-id="modal80" role="dialog" aria-labelledby="modal1Title"
+                    aria-describedby="modal1Desc">
+                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                    <div>
+                        <h2 id="modal1Title">Название</h2>
+                        <p id="modal1Desc">
+                            <span>
+                                <img class="photo" src="/assets/images/gallery/shoesclothesaccessories/3.jpg"
+                                    alt="accessories5">
+                                <img class="photo" src="/assets/images/gallery/shoesclothesaccessories/10.jpeg"
+                                    alt="accessories5">
+                                <img class="photo" src="/assets/images/gallery/shoesclothesaccessories/11.jpeg"
+                                    alt="accessories5">
+                            </span>
+                            Описание
+                            <br>
+                            Цена
+                        </p>
+                    </div>
+                    <br>
+                    <button data-remodal-action="cancel" class="remodal-cancel">Закрыть</button>
+                    <button data-remodal-action="confirm" class="remodal-confirm">В корзину</button>
+                </div>
+                <div class="remodal-bg">
+                    <a href="#modal80"><img src="/assets/images/gallery/shoesclothesaccessories/2.jpg"
+                            alt="accessories5"></a><br>
+                </div>
+
             </div>
+
 
         </section>
         <!--GALLERY SECTION END-->
@@ -159,12 +1761,14 @@
             </address>
             <div class="col-md-2 footer__info">
                 <li class="footer__info footer__info-pay">
-                    <a class="footer__info-pay-link" href="#">оплата / доставка / возврат</a>
+                    <a class="footer__info-pay-link" href="/Delivery.html">ОПЛАТА / ДОСТАВКА / ВОЗВРАТ</a>
                 </li>
-                <li class="footer__info footer__info-history"><a class="footer__info-history-link" href="#">ИСТОРИЯ</a>
+                <li class="footer__info footer__info-history"><a class="footer__info-history-link" href="#">ИСТОРИИ</a>
                 </li>
             </div>
         </div>
+
+
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -173,10 +1777,70 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
     </script>
-
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>
-        var myCarousel = document.querySelector('#carouselExampleControls')
-        var carousel = new bootstrap.Carousel(myCarousel)
+        window.jQuery || document.write('<script src="../libs/jquery/dist/jquery.min.js"><\/script>')
+    </script>
+    <script src="/assets/styles/remodal.js"></script>
+    <script>
+        $(document).on('opening', '.remodal', function () {
+            console.log('opening');
+        });
+
+        $(document).on('opened', '.remodal', function () {
+            console.log('opened');
+        });
+
+        $(document).on('closing', '.remodal', function (e) {
+            console.log('closing' + (e.reason ? ', reason: ' + e.reason : ''));
+        });
+
+        $(document).on('closed', '.remodal', function (e) {
+            console.log('closed' + (e.reason ? ', reason: ' + e.reason : ''));
+        });
+
+        $(document).on('confirmation', '.remodal', function () {
+            console.log('confirmation');
+        });
+
+        $(document).on('cancellation', '.remodal', function () {
+            console.log('cancellation');
+        });
+
+        //  Usage:
+        //  $(function() {
+        //
+        //    // In this case the initialization function returns the already created instance
+        //    var inst = $('[data-remodal-id=modal]').remodal();
+        //
+        //    inst.open();
+        //    inst.close();
+        //    inst.getState();
+        //    inst.destroy();
+        //  });
+
+        //  The second way to initialize:
+        $('[data-remodal-id=modal2]').remodal({
+            modifier: 'with-red-theme'
+        });
+    </script>
+    <script src=”https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js”> </script> <script>
+        var btn = $('#buttonup');
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+
+        btn.on('click', function (e) {
+
+            $('html, body').animate({
+                scrollTop: 0
+            }, '300');
+        });
     </script>
 
 </body>
