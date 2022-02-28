@@ -1,5 +1,8 @@
 body {
     background-color: black;
+    font-family: Open Sans, Arial, sans-serif;
+    font-style: normal;
+    color: #FFFFFF;
 }
 
 //************************ header ***************************
@@ -76,10 +79,8 @@ body {
 
 .qa__header {
     text-align: center;
-    color: white;
     font-size: 70px;
     line-height: 120px;
-    font-family: Open Sans;
     font-weight: 400px;
 }
 
@@ -90,9 +91,7 @@ body {
     background-color: black;
 
     .qa__list-header {
-        color: #FFFFFF;
         font-size: 40px;
-        font-family: Open Sans;
         line-height: 87px;
         padding-top: 50px;
     }
