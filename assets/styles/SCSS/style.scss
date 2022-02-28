@@ -93,6 +93,12 @@ body {
     margin: 10px 0;
 }
 
+.slider__title {
+    text-align: center;
+    font-size: calc((100vw - 480px)/(1280 - 480) * (100 - 50) + 50px);
+    text-transform: uppercase;
+}
+
 .carousel-item {
     height: 90vh;
     background-position: center center;
