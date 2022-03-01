@@ -1,37 +1,62 @@
 body {
     background-color: black;
+    font-family: Open Sans, Arial, sans-serif;
+    font-style: normal;
+    color: #FFFFFF;
 }
 
 //************************ header ***************************
-.header {
-    display: flex;
-    justify-content: space-around;
-    padding: 40px;
-    margin: auto;
-    margin-bottom: 70px;
+.header__logo_st {
+    width: 40%;
 }
 
 .nav__list-items {
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 25px;
     text-transform: uppercase;
-    color: #FFFFFF;
 
-    &:hover {
-        color: #F5B2B6;
-        text-decoration: none;
-        transition: .3s;
-        cursor: pointer;
-    }
+}
+
+.header__nav-link {
+    color: white;
+    font-size: 1em;
+}
+
+.header__nav-link:hover {
+    color: #F5B2B6;
+    text-decoration: none;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.cart_link {
+    background-image: url('/assets/images/Cart.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40px;
+    width: 40px;
+}
+
+
+.cart_link:hover {
+    background-image: url('/assets/images/cart_rose.svg');
+}
+
+
+.header__title {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    font-weight: normal;
+    font-size: 4em;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 @media screen and (max-width:800px) {
     .header {
         padding: 5px;
         background-size: 100%;
+        margin-bottom: 50px;
     }
 
     .header__logo-img {
@@ -42,7 +67,6 @@ body {
         top: 19px;
     }
 }
-
 
 //************************ header end ***************************/
 
@@ -55,10 +79,8 @@ body {
 
 .qa__header {
     text-align: center;
-    color: white;
     font-size: 70px;
     line-height: 120px;
-    font-family: Open Sans;
     font-weight: 400px;
 }
 
@@ -69,9 +91,7 @@ body {
     background-color: black;
 
     .qa__list-header {
-        color: #FFFFFF;
         font-size: 40px;
-        font-family: Open Sans;
         line-height: 87px;
         padding-top: 50px;
     }
@@ -161,36 +181,47 @@ body {
 /******************************footer**************************************/
 .footer {
     background-color: black;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     color: white;
     padding-top: 50px;
     padding-left: 5px;
 
     .footer__social-network_title {
-        padding-left: 10%;
-        padding-bottom: 30px;
+        padding-bottom: 10px;
     }
 
     li {
         list-style-type: none;
     }
 
-    .footer__social-network,
     .footer__social-network {
         padding-bottom: 50px;
     }
 
-    .footer__addres_pochta,
-    .footer__addres_tel,
-    .footer__info_gallery-link,
-    .footer__info_history-link {
+    .footer__addres-pochta,
+    .footer__addres-tel,
+    .footer__info-pay-link,
+    .footer__info-history-link,
+    .footer__social-network {
         color: white;
     }
 
-    .footer__info_history {
-        padding-bottom: 60px;
+    .footer__social-network,
+    .footer__addres,
+    .footer__info {
+        font-size: 12px;
     }
+}
+
+.footer__info-pay-link {
+    padding-bottom: 20px;
+}
+
+.footer__social-network_img {
+    width: 50px;
+}
+
+.footer__info-history-link {
+    padding-bottom: 50px;
 }
 
 /********************************footer_end********************************/

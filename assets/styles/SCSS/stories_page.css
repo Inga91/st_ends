@@ -5,7 +5,6 @@ body {
   color: #FFFFFF;
 }
 
-/********************************************************* header *************************************************/
 .header__logo_st {
   width: 40%;
 }
@@ -78,64 +77,58 @@ body {
   }
 }
 
-/**********************************************header_end ***************************************************/
-/************************************************about*******************************************************/
-.about__header {
-  font-size: 64px;
-  font-family: Open Sans;
-  font-weight: 600;
-  font-style: normal;
-  line-height: 87px;
-  color: #FFFFFF;
-  padding-top: 30px;
+/*******************************stories_page***************************/
+.content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 35px 10px;
+  clear: both;
 }
 
-.about__header-delivery {
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 87px;
+.content .post {
+  padding: 0 10px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #404244;
 }
 
-.about__description {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 25px;
+.content .post:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
 }
 
-@media (max-width: 1024px) {
-  .about__header {
-    font-size: 50px;
-  }
-  .about__header-delivery {
-    font-size: 25px;
-  }
+.content .post .postdate {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 100;
+  color: #757475;
+  margin: 0;
 }
 
-@media (max-width: 768px) {
-  .about__header {
-    font-size: 40px;
-  }
-  .about__header-delivery {
-    font-size: 20px;
-    line-height: 50px;
-  }
+.content .post h2 {
+  color: #d8d5d5;
+  font-size: 2em;
+  font-weight: 500;
+  padding-bottom: 10px;
+  margin: 0;
 }
 
-@media (max-width: 375px) {
-  .about__header {
-    font-size: 30px;
-    line-height: 30px;
-  }
-  .about__header-delivery {
-    font-size: 20px;
-    line-height: 50px;
-  }
-  .about__description {
-    font-size: 12px;
-  }
+.content .post p {
+  font-size: 1em;
+  padding-top: 10px;
+  padding-bottom: 3%;
+  word-spacing: .2em;
+  line-height: 1.2em;
+  color: #d8d5d5;
+  margin: 0;
 }
 
-/********************************************************about_end**********************************************/
+.content img {
+  max-width: 100%;
+  height: auto;
+  padding: 0.2em;
+  margin: 10px 0;
+}
+
 /***************************************************footer******************************************************/
 .footer {
   background-image: url(/assets/images/Line1.png);
@@ -185,6 +178,4 @@ body {
 .footer__info-history-link {
   padding-bottom: 50px;
 }
-
-/*************************************************footer_end********************************************/
-/*# sourceMappingURL=Delivery.css.map */
+/*# sourceMappingURL=stories_page.css.map */
