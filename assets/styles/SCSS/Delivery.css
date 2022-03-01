@@ -6,7 +6,7 @@ body {
 }
 
 /********************************************************* header *************************************************/
-.header__logo_st {
+.header__logo-st {
   width: 40%;
 }
 
@@ -178,7 +178,7 @@ body {
   padding-bottom: 20px;
 }
 
-.footer__social-network_img {
+.footer__social-network-img {
   width: 50px;
 }
 
