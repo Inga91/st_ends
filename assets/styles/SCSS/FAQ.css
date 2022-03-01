@@ -87,6 +87,7 @@ body {
   font-size: 40px;
   line-height: 87px;
   padding-top: 50px;
+  list-style-type: none;
 }
 
 .qa__list-all {
