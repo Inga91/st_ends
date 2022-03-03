@@ -5,7 +5,7 @@ body {
   color: #FFFFFF;
 }
 
-.header__logo_st {
+.header__logo-st {
   width: 40%;
 }
 
@@ -87,6 +87,7 @@ body {
   font-size: 40px;
   line-height: 87px;
   padding-top: 50px;
+  list-style-type: none;
 }
 
 .qa__list-all {
@@ -174,7 +175,7 @@ body {
   padding-left: 5px;
 }
 
-.footer .footer__social-network_title {
+.footer .footer__social-network-title {
   padding-bottom: 10px;
 }
 
@@ -204,7 +205,7 @@ body {
   padding-bottom: 20px;
 }
 
-.footer__social-network_img {
+.footer__social-network-img {
   width: 50px;
 }
 
