@@ -178,4 +178,8 @@ body {
 .footer__info-history-link {
   padding-bottom: 50px;
 }
+
+.footer__info {
+  justify-items: center;
+}
 /*# sourceMappingURL=stories_page.css.map */
