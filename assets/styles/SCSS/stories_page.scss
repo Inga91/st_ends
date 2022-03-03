@@ -90,6 +90,7 @@ body {
     }
 
 }
+
 /*******************************stories_page***************************/
 
 .content {
@@ -98,50 +99,51 @@ body {
     padding: 15px 10px;
     clear: both;
 
-.post {
-    padding: 0 10px;
-    margin-bottom: 50px;
-    border-bottom: 1px solid #404244;
-    
-    &:last-child {
-        margin-bottom: 0;
-        border-bottom: none;
+    .post {
+        padding: 0 10px;
+        margin-bottom: 50px;
+        border-bottom: 1px solid #404244;
+
+        &:last-child {
+            margin-bottom: 0;
+            border-bottom: none;
+        }
+
+        .postdate {
+            font-size: 1em;
+            font-style: italic;
+            font-weight: 100;
+            color: rgb(117, 116, 117);
+            margin: 0;
+        }
+
+        h2 {
+            color: rgb(216, 213, 213);
+            font-size: 2em;
+            font-weight: 500;
+            padding-bottom: 10px;
+            margin: 0;
+        }
+
+        p {
+            font-size: 1em;
+            padding-top: 10px;
+            padding-bottom: 3%;
+            word-spacing: .2em;
+            line-height: 1.2em;
+            color: rgb(216, 213, 213);
+            margin: 0;
+        }
     }
 
-.postdate {
-    font-size: 1em;
-    font-style: italic;
-    font-weight: 100;
-    color: rgb(117, 116, 117);
-    margin: 0;
+    img {
+        max-width: 100%;
+        height: auto;
+        padding: 0.2em;
+        margin: 10px 0;
+    }
 }
 
-h2 {
-    color: rgb(216, 213, 213);
-    font-size: 2em;
-    font-weight: 500;
-    padding-bottom: 10px;
-    margin: 0;
-}
-
-p {
-    font-size: 1em;
-    padding-top: 10px;
-    padding-bottom: 3%;
-    word-spacing: .2em;
-    line-height: 1.2em;
-    color: rgb(216, 213, 213);
-    margin: 0;
-}
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    padding: 0.2em;
-    margin: 10px 0;
-}
-}
 /***************************************************footer******************************************************/
 .footer {
     background-image: url(/assets/images/Line1.png);
@@ -151,6 +153,9 @@ img {
     margin-top: 50px;
     padding-top: 50px;
     padding-left: 5px;
+
+
+
 
     .social-network__title {
         padding-bottom: 10px;
@@ -170,6 +175,8 @@ img {
     .footer__info-history-link,
     .footer__social-network {
         color: white;
+
+
     }
 
     .footer__social-network,
@@ -177,11 +184,13 @@ img {
     .footer__info {
         font-size: 12px;
         line-height: 2.5em;
+
     }
 }
 
 .footer__info-pay-link {
     padding-bottom: 20px;
+
 }
 
 .footer__social-network_img {
@@ -190,4 +199,8 @@ img {
 
 .footer__info-history-link {
     padding-bottom: 50px;
+}
+
+.footer__info {
+    justify-items: center;
 }
