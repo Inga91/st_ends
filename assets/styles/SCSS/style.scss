@@ -16,7 +16,7 @@ body {
     height: 100vh;
 }
 
-.header__logo_st {
+.header__logo-st {
     width: 40%;
 }
 
@@ -224,7 +224,7 @@ body {
 
 
 
-    .footer__social-network_title {
+    .social-network__title {
         padding-bottom: 10px;
     }
 
@@ -269,23 +269,23 @@ body {
 }
 
 /***************gallery******************/
-.gallery_tabs {
+.gallery__tabs {
     width: 100%;
     padding: 0px;
     margin-top: 10%;
     font-size: calc(10px + 5 *(100vw / 1280));
 }
 
-.gallery_tabs>input {
+.gallery__tabs>input {
     display: none;
 }
 
-.gallery_tabs>div {
+.gallery__tabs>div {
     display: none;
     background: #FFFFFF;
 }
 
-.gallery_tabs>label {
+.gallery__tabs>label {
     display: inline-block;
     padding: 5px;
     text-align: center;
@@ -294,7 +294,7 @@ body {
     cursor: pointer;
 }
 
-.gallery_tabs>input:checked+label {
+.gallery__tabs>input:checked+label {
     color: #ffffff;
     border-bottom: 1px solid #FFFFFF;
     border-top: 1px solid #FFFFFF;
