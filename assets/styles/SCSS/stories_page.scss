@@ -102,11 +102,9 @@ body {
     .post {
         padding: 0 10px;
         margin-bottom: 50px;
-        border-bottom: 1px solid #404244;
 
         &:last-child {
             margin-bottom: 0;
-            border-bottom: none;
         }
 
         .postdate {

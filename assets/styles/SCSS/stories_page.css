@@ -88,12 +88,10 @@ body {
 .content .post {
   padding: 0 10px;
   margin-bottom: 50px;
-  border-bottom: 1px solid #404244;
 }
 
 .content .post:last-child {
   margin-bottom: 0;
-  border-bottom: none;
 }
 
 .content .post .postdate {
