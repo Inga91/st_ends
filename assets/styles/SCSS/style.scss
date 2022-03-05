@@ -208,10 +208,6 @@ body {
 
 /******************************section_qa_end******************************/
 
-
-
-
-
 .footer {
     background-image: url(/assets/images/Line1.png);
     background-repeat: no-repeat;
@@ -221,9 +217,6 @@ body {
     padding-top: 50px;
     padding-left: 5px;
 
-
-
-
     .social-network__title {
         padding-bottom: 10px;
     }
@@ -231,28 +224,26 @@ body {
     li {
         list-style-type: none;
     }
+}
 
-    .footer__social-network {
-        padding-bottom: 50px;
-    }
+.footer__social-network,
+.footer__addres,
+.footer__info {
+    font-size: 12px;
+    line-height: 2.5em;
+}
 
-    .footer__addres-pochta,
-    .footer__addres-tel,
-    .footer__info-pay-link,
-    .footer__info-history-link,
-    .footer__social-network {
-        color: white;
+.footer__social-network {
+    padding-bottom: 50px;
+}
 
+.footer__addres-pochta,
+.footer__addres-tel,
+.footer__info-pay-link,
+.footer__info-history-link,
+.footer__social-network {
+    color: white;
 
-    }
-
-    .footer__social-network,
-    .footer__addres,
-    .footer__info {
-        font-size: 12px;
-        line-height: 2.5em;
-
-    }
 }
 
 .footer__info-pay-link {
