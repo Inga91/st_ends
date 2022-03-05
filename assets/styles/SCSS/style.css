@@ -240,6 +240,10 @@ body {
   padding-bottom: 50px;
 }
 
+.footer__info {
+  justify-items: center;
+}
+
 /***************gallery******************/
 .gallery__tabs {
   width: 100%;
@@ -316,8 +320,8 @@ body {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  -webkit-transition: background-color .3s, opacity .5s, visibility .5s;
-  transition: background-color .3s, opacity .5s, visibility .5s;
+  -webkit-transition: background-color .3s, opacity .5s, visibility .5s;
+  transition: background-color .3s, opacity .5s, visibility .5s;
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
@@ -345,5 +349,19 @@ body {
 #buttonup.show {
   opacity: 1;
   visibility: visible;
+}
+
+.slider1 .carousel-item {
+  height: 70vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.slider2 .carousel-item {
+  height: 70vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 /*# sourceMappingURL=style.css.map */
