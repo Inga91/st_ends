@@ -269,6 +269,12 @@ body {
     padding: 0px;
     margin-top: 10%;
     font-size: calc(10px + 5 *(100vw / 1280));
+
+
+}
+
+.gallery__tabs>p {
+    margin-top: 10px;
 }
 
 .gallery__tabs>input {
@@ -277,6 +283,7 @@ body {
 
 .gallery__tabs>div {
     display: none;
+
     background: #FFFFFF;
 }
 
@@ -371,5 +378,8 @@ body {
         background-position: center center;
         background-repeat: no-repeat;
         background-size: contain;
+
+        margin-bottom: 20px;
+
     }
 }
