@@ -7,13 +7,12 @@ body {
 
 /************************ header ***************************/
 .header {
-  height: 700px;
   width: 100%;
+  height: 100vh;
   background-image: url(/assets/images/main_photo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
 }
 
 .header__logo-st {
@@ -91,48 +90,97 @@ body {
 /************************ header end ***************************/
 /****************************** section carusel ******************************/
 .slider {
-  margin: 10px 0;
+  /*padding: 10px 0;*/
+  background-color: #858585;
+  padding-top: 2%;
+  padding-bottom: 5%;
 }
 
 .slider__title {
   text-transform: uppercase;
   font-size: calc(14px + 45*(100vw / 1280));
   text-align: center;
-  padding-bottom: 2%;
-  margin-top: 10%;
+}
+
+.slider__title-link {
+  color: #FFF;
+}
+
+.slider__title-link:hover {
+  color: #FFF;
 }
 
 .carousel-item {
-  height: 90vh;
+  height: 85vh;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
+  position: relative;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .carousel-item {
-    height: 800px;
-    background-size: cover;
-  }
+.carusel-item__info {
+  display: none;
 }
+
+.carousel-item:hover .carusel-item__info {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -100px;
+  margin-top: -75px;
+  height: 150px;
+  width: 200px;
+  background: rgba(192, 192, 192, 0.6);
+  -webkit-transition: opacity .2s ease-in-out;
+  transition: opacity .2s ease-in-out;
+  font-weight: bold;
+  text-align: center;
+}
+
+.carusel-item__text {
+  padding: 10px;
+  color: #fff;
+}
+
+.carusel-item__link {
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+}
+
+.carusel-item__link:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.carusel-item__link-bg {
+  background: #000;
+}
+
+/*
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .carousel-item {
+        height: 800px;
+        background-size: contain;
+    }
+}
+
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
-  .carousel-item {
-    height: 100vh;
-    background-size: contain;
-  }
+    .carousel-item {
+        height: 100vh;
+        background-size: contain;
+    }
 }
 
 @media screen and (min-width: 1280px) {
-  .carousel-item {
-    height: 100vh;
-    background-size: contain;
-  }
-  .slider {
-    margin: 30px 0;
-  }
+    .carousel-item {
+        height: 100vh;
+        background-size: contain;
+    }
 }
-
+*/
 .carousel-control-prev,
 .carousel-control-next {
   background: none;
@@ -196,7 +244,7 @@ body {
   background-repeat: no-repeat;
   background-color: black;
   color: white;
-  margin-top: 50px;
+  /*margin-top: 50px;*/
   padding-top: 50px;
   padding-left: 5px;
 }
@@ -248,7 +296,7 @@ body {
 .gallery__tabs {
   width: 100%;
   padding: 0px;
-  margin-top: 10%;
+  margin-top: 1%;
   font-size: calc(10px + 5 *(100vw / 1280));
 }
 
