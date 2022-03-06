@@ -89,51 +89,24 @@ body {
     }
 
 }
+/***************************************story_nazmieva***********************/
+.item{
+    padding-left: 0;
+    width: auto;
+    height: auto;
 
-/*******************************stories_page***************************/
-
-.content {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 15px 10px;
-    clear: both;
-
-    .post {
-        padding: 0 10px;
-        margin-bottom: 35px;
-
-        &:last-child {
-            margin-bottom: 0;
+    img{
+        width: 100%;
+        height: 100%;
         }
-        .post__story-link{
-            text-decoration-color: rgb(216, 213, 213);
-        }
-        .postdate {
-            font-size: 1em;
-            font-style: italic;
-            font-weight: 100;
-            color: rgb(117, 116, 117);
-            margin: 0;
-        }
-
-        h2 {
-            color: rgb(216, 213, 213);
-            font-size: 2em;
-            font-weight: 500;
-            padding-bottom: 10px;
-            margin: 0;
-        }
-    }
-
-    img {
-        max-width: 95%;
-        height: auto;
-        padding: 0.2em;
-        margin: 10px 0;
-    }
 }
 
-/***************************************************footer******************************************************/
+
+
+
+
+
+/****************************************footer****************************/
 .footer {
     background-image: url(/assets/images/Line1.png);
     background-repeat: no-repeat;
