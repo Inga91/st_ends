@@ -300,6 +300,10 @@ body {
   font-size: calc(10px + 5 *(100vw / 1280));
 }
 
+.gallery__tabs > p {
+  margin-top: 10px;
+}
+
 .gallery__tabs > input {
   display: none;
 }
@@ -404,5 +408,6 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */
