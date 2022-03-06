@@ -79,14 +79,25 @@ body {
 
 /***************************************story_nazmieva***********************/
 .item {
-  padding-left: 0;
-  width: auto;
-  height: auto;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 .item img {
   width: 100%;
   height: 100%;
+}
+
+.item:hover {
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
+}
+
+@media screen and (min-width: 1000px) {
+  .content {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
 }
 
 /****************************************footer****************************/

@@ -105,9 +105,11 @@ body {
         &:last-child {
             margin-bottom: 0;
         }
-        .post__story-link{
+
+        .post__story-link {
             text-decoration-color: rgb(216, 213, 213);
         }
+
         .postdate {
             font-size: 1em;
             font-style: italic;
@@ -126,70 +128,78 @@ body {
     }
 
     img {
-        max-width: 95%;
+        max-width: 100%;
         height: auto;
         padding: 0.2em;
         margin: 10px 0;
     }
+
+    img:hover {
+        filter: brightness(60%);
+    }
 }
 
-/***************************************************footer******************************************************/
-.footer {
-    background-image: url(/assets/images/Line1.png);
-    background-repeat: no-repeat;
-    background-color: black;
-    color: white;
-    margin-top: 50px;
-    padding-top: 50px;
-    padding-left: 5px;
+@media screen and (min-width: 1000px) {
+    .post {
+        padding: 0 10px;
+        margin-bottom: 35px;
 
+        img {
+            max-width: 75%;
+            height: auto;
+        }
+    }}
 
-
-
-    .social-network__title {
-        padding-bottom: 10px;
+    /***************************************************footer******************************************************/
+    .footer {
+        background-image: url(/assets/images/Line1.png);
+        background-repeat: no-repeat;
+        background-color: black;
+        color: white;
+        /*margin-top: 50px;*/
+        padding-top: 50px;
+        padding-left: 5px;
+    
+        .social-network__title {
+            padding-bottom: 10px;
+        }
+    
+        li {
+            list-style-type: none;
+        }
     }
-
-    li {
-        list-style-type: none;
+    
+    .footer__social-network,
+    .footer__addres,
+    .footer__info {
+        font-size: 12px;
+        line-height: 2.5em;
     }
-
+    
     .footer__social-network {
         padding-bottom: 50px;
     }
-
+    
     .footer__addres-pochta,
     .footer__addres-tel,
     .footer__info-pay-link,
     .footer__info-history-link,
     .footer__social-network {
         color: white;
-
-
     }
-
-    .footer__social-network,
-    .footer__addres,
+    
+    .footer__info-pay-link {
+        padding-bottom: 20px;
+    }
+    
+    .footer__social-network_img {
+        width: 50px;
+    }
+    
+    .footer__info-history-link {
+        padding-bottom: 50px;
+    }
+    
     .footer__info {
-        font-size: 12px;
-        line-height: 2.5em;
-
-    }
-}
-
-.footer__info-pay-link {
-    padding-bottom: 20px;
-
-}
-
-.footer__social-network_img {
-    width: 50px;
-}
-
-.footer__info-history-link {
-    padding-bottom: 50px;
-}
-
-.footer__info {
-    justify-items: center;
-}
+        justify-items: center;
+        }
