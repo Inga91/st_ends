@@ -116,10 +116,26 @@ body {
 }
 
 .content img {
-  max-width: 95%;
+  max-width: 100%;
   height: auto;
   padding: 0.2em;
   margin: 10px 0;
+}
+
+.content img:hover {
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
+}
+
+@media screen and (min-width: 1000px) {
+  .post {
+    padding: 0 10px;
+    margin-bottom: 35px;
+  }
+  .post img {
+    max-width: 75%;
+    height: auto;
+  }
 }
 
 /***************************************************footer******************************************************/
@@ -128,7 +144,7 @@ body {
   background-repeat: no-repeat;
   background-color: black;
   color: white;
-  margin-top: 50px;
+  /*margin-top: 50px;*/
   padding-top: 50px;
   padding-left: 5px;
 }
@@ -141,23 +157,23 @@ body {
   list-style-type: none;
 }
 
-.footer .footer__social-network {
+.footer__social-network,
+.footer__addres,
+.footer__info {
+  font-size: 12px;
+  line-height: 2.5em;
+}
+
+.footer__social-network {
   padding-bottom: 50px;
 }
 
-.footer .footer__addres-pochta,
-.footer .footer__addres-tel,
-.footer .footer__info-pay-link,
-.footer .footer__info-history-link,
-.footer .footer__social-network {
+.footer__addres-pochta,
+.footer__addres-tel,
+.footer__info-pay-link,
+.footer__info-history-link,
+.footer__social-network {
   color: white;
-}
-
-.footer .footer__social-network,
-.footer .footer__addres,
-.footer .footer__info {
-  font-size: 12px;
-  line-height: 2.5em;
 }
 
 .footer__info-pay-link {
