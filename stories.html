@@ -19,6 +19,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Raleway:wght@100;500&family=Roboto:wght@700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
 </head>
 
@@ -42,29 +43,42 @@
             </div>
         </nav>
     </header>
-    <!-- stories -->
-    <section class="content">
-        <section class="post">
-            <a class="post__story-link" href="story_nazmieva.html"><h2>Stay at home by Albina Nazmieva</h2></a>
-            <p class="postdate"> 18 февраля 2021 г. </p>
-            <a href="story_nazmieva.html"><img src="/assets/images/stay_at_home_Albina_Nazmieva/IMG_2810.JPG" alt="foto" /></a>
+    <main>
+        <a id="buttonup" href="#content"></a>
+        <!-- stories -->
+        <section class="content">
+            <section class="post">
+                <a class="post__story-link" href="story_nazmieva.html">
+                    <h2>Stay at home by Albina Nazmieva</h2>
+                </a>
+                <p class="postdate"> 18 февраля 2021 г. </p>
+                <a href="story_nazmieva.html"><img src="/assets/images/stay_at_home_Albina_Nazmieva/IMG_2810.JPG"
+                        alt="foto" /></a>
             </section>
-        <section class="post">
-            <a class="post__story-link" href="story_nazarova.html"><h2>Stay at home by Dasha Nazarova</h2></a>
-            <p class="postdate"> 18 февраля 2021 г. </p>
-            <a href="story_nazarova.html"><img src="/assets/images/stay_at_home_Dasha_Nazarova/IMG_5922.jpeg" alt="foto" /></a>
+            <section class="post">
+                <a class="post__story-link" href="story_nazarova.html">
+                    <h2>Stay at home by Dasha Nazarova</h2>
+                </a>
+                <p class="postdate"> 18 февраля 2021 г. </p>
+                <a href="story_nazarova.html"><img src="/assets/images/stay_at_home_Dasha_Nazarova/IMG_5922.jpeg"
+                        alt="foto" /></a>
+            </section>
+            <section class="post">
+                <a class="post__story-link" href="story_pearls.html">
+                    <h2>Pearls</h2>
+                </a>
+                <p class="postdate"> 28 июня 2020 г. </p>
+                <a href="story_pearls.html"><img src="/assets/images/Pearls/IMG_1446.JPG" alt="foto" /></a>
+            </section>
+            <section class="post">
+                <a class="post__story-link" href="story_spring.html">
+                    <h2>Spring 2020</h2>
+                </a>
+                <p class="postdate"> 01 марта 2020 г. </p>
+                <a href="story_spring.html"><img src="/assets/images/Spring_2020/IMG_4660.JPG" alt="foto" /></a>
+            </section>
         </section>
-        <section class="post">
-            <a class="post__story-link" href="story_pearls.html"><h2>Pearls</h2></a>
-            <p class="postdate"> 28 июня 2020 г. </p>
-            <a href="story_pearls.html"><img src="/assets/images/Pearls/IMG_1446.JPG" alt="foto" /></a>
-        </section>
-        <section class="post">
-            <a class="post__story-link" href="story_spring.html"><h2>Spring 2020</h2></a>
-            <p class="postdate"> 01 марта 2020 г. </p>
-            <a href="story_spring.html"><img src="/assets/images/Spring_2020/IMG_4660.JPG" alt="foto" /></a>
-        </section>
-    </section>
+    </main>
     <!-- footer -->
     <footer class="footer container">
         <div class="row">
@@ -109,6 +123,26 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
     </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src=”https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js”> </script> <script>
+        var btn = $('#buttonup');
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+
+        btn.on('click', function (e) {
+
+            $('html, body').animate({
+                scrollTop: 0
+            }, '300');
+        });
+    </script>
+
 </body>
 
 </html>

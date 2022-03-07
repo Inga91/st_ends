@@ -21,6 +21,8 @@
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Raleway:wght@100;500&family=Roboto:wght@700&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -43,7 +45,9 @@
             </div>
         </nav>
     </header>
+    <a id="buttonup" href="#content"></a>
     <!-- story_nazmieva -->
+
     <div class="content container-fluid">
     <div class="row mt-4">
 <div class="item col-sm-6 col-md-4 mb-3">
@@ -148,7 +152,6 @@
 </div>
     </div>
 
-    </div>
     <!-- footer -->
     <footer class="footer container">
         <div class="row">
@@ -194,6 +197,26 @@
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src=”https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js”> </script> <script>
+        var btn = $('#buttonup');
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+
+        btn.on('click', function (e) {
+
+            $('html, body').animate({
+                scrollTop: 0
+            }, '300');
+        });
+    </script>
 </body>
 
 </html>

@@ -191,15 +191,63 @@ body {
     .footer__info-pay-link {
         padding-bottom: 20px;
     }
-    
-    .footer__social-network_img {
-        width: 50px;
-    }
-    
-    .footer__info-history-link {
-        padding-bottom: 50px;
-    }
-    
-    .footer__info {
-        justify-items: center;
-        }
+
+
+.footer__info-pay-link {
+    padding-bottom: 20px;
+
+}
+
+.footer__social-network_img {
+    width: 50px;
+}
+
+.footer__info-history-link {
+    padding-bottom: 50px;
+}
+
+.footer__info {
+    justify-items: center;
+}
+
+#buttonup {
+    display: inline-block;
+    background-color: #0f0f0f;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#buttonup::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+#buttonup:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+#buttonup:active {
+    background-color: #555;
+}
+
+#buttonup.show {
+    opacity: 1;
+    visibility: visible;
+}
+
